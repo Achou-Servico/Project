@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severinos</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <!-- ###################### Seção cabeçalho ######################### -->
+    <header>
+      
+        <img src="./src/assets/images/logotipo-severinos.png" alt="Logotipo Dr. Reforma Confiança e qualidade em cada serviço">
+        <nav class="nav-buttons">
+          <a href="#">Inicio</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#blog">Blog</a>
+          <a href="#avaliacao">Avaliações</a>
+        </nav>
+        <div class="botoes-login">
+          <button class="botao-login" onclick="openPopup('loginPopup')">Entrar</button>
+          <button class="botao-login" onclick="openPopup('registerPopup')">Cadastrar</button>
+        </div>
+      
+    </header>
+
+    <div id="loginPopup" class="popup-overlay" onclick="closePopupOnOutside(event, 'loginPopup')">
+      <div class="popup-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closePopup('loginPopup')">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <label>Email</label>
+          <input type="email" placeholder="Digite seu email" required>
+          <label>Senha</label>
+          <input type="password" placeholder="Digite sua senha" required>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="registerPopup" class="popup-overlay" onclick="closePopupOnOutside(event, 'registerPopup')">
+      <div class="popup-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closePopup('registerPopup')">&times;</span>
+        <h2>Cadastro</h2>
+        <form>
+          <label>Nome</label>
+          <input type="text" placeholder="Digite seu nome" required>
+          <label>Email</label>
+          <input type="email" placeholder="Digite seu email" required>
+          <label>Senha</label>
+          <input type="password" placeholder="Crie uma senha" required>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ############################ Seção hero  ##############################-->
+    <section class="hero">
+        <div class="hero-div">
+            <h1>Precisou, chamou! <br>Os severinos resolvem.</h1>
+            <p>Serviços rápidos e confiáveis com profissionais especializados em elétrica, hidráulica, serralheria, pintura, marcenaria e mais.</p>
+        </div>
+        <div class="imagem-hero">
+            <img src="./src/assets/images/imagem-prestador-hero.png" alt="Prestador de serviço segurando cabos">
+        </div>
+    </section>
+
+    <!-- ################## Seção caixa de pesquisa ################################-->
+    <section class="pesquisa" id="servicos">
+            <h1>
+            Qual serviço está precisando hoje?
+            </h1>
+            <div class="caixa-pesquisa">
+                
+            <input type="text" placeholder="Ex: troca de disjuntor, pintura, instalação de torneira...">
+            
+            <button>
+            <img src="./src/assets/images/lupa-pesquisa.png" alt="Buscar">
+            </button>
+            </div>
+    </section>
+
+    <!-- ######################### Seção icones de navegação #################################-->
+    <section class="icones-navegacao">
+        <a href="">
+            <img src="./src/assets/images/img-eletricista.svg" alt="eletricista">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-chaveiro.svg" alt="chaveiro">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-pintor.svg" alt="pintor">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-serralheiro.svg" alt="serralheiro">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-encanador.svg" alt="encanador">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-marceneiro.svg" alt="marceneiro">
+            <span></span>
+        </a>
+        <a href="">
+            <img src="./src/assets/images/img-pedreiro.svg" alt="pedreiro">
+            <span></span>
+        </a>
+    </section>
+    
+    
+    <!--########################### Seção conteúdo de serviço ######################### -->
+    <section class="section-container">
+        <div class="content">
+          <div class="image-container">
+            <img src="./src/assets/images/imagem-eletricista-capacete-laranja.svg" alt="Eletricista" />
+          </div>
+          <div class="text-container">
+            <h1>Serviço rápido, com garantia e preço justo</h1>
+            <p>
+              Conte com os Severinos para serviços bem-feitos, com atendimento ágil e preço transparente. Seja em casa ou no seu negócio, estamos prontos para ajudar.
+            </p>
+            <button class="orange-button">Saiba mais</button>
+          </div>
+        </div>
+          <div class="content">
+              <div class="text-container">
+                  <h1>Atendimento onde e quando você precisar</h1>
+                  <p>
+                    Seja para emergências ou manutenções do dia a dia, temos sempre um Severino disponível perto de você. É só chamar que a gente resolve.
+                    </p>
+                    <button class="orange-button">Saiba mais</button>
+                </div>
+                <div class="image-container">
+                  <img src="./src/assets/images/imagem-eletricista-capacete-laranja.svg" alt="Eletricista" />
+                </div>
+          </div>
+    </section>
+
+
+          <!--###################### Seção do Blog ##################################  -->
+      <section class="blog-section" id="blog">
+        <h2>Dicas úteis para sua casa e seu bolso
+
+        </h2>
+        <div class="cards-container">
+          <div class="blog-card">
+            <h3>5 dicas para economizar energia em casa</h3>
+            <p>Reduza sua conta de luz com hábitos simples no dia a dia. Veja como usar seus aparelhos com mais eficiência e evitar desperdícios.</p>
+            <button class="read-more">Read More <span class="arrow">&#8250;</span></button>
+          </div>
+          <div class="blog-card">
+            <h3>Quando é hora de trocar a fiação elétrica?</h3>
+            <p>Cheiro de queimado, disjuntores desarmando ou tomadas quentes? Entenda os sinais de que sua instalação elétrica pode estar pedindo socorro.</p>
+            <button class="read-more">Read More <span class="arrow">&#8250;</span></button>
+          </div>
+          <div class="blog-card">
+            <h3>Como escolher a tinta ideal para sua casa</h3>
+            <p>Tinta fosca, acetinada ou lavável? Veja qual é a mais indicada para cada cômodo e acerte no acabamento da sua pintura.</p>
+            <button class="read-more">Read More <span class="arrow">&#8250;</span></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ########### Seção Prestador e clientes ########### -->
+
+      <section class="dual-section">
+        <div class="column">
+          <h3>Prestador<br>de serviço</h3>
+          <p>
+            <b>Quer mais clientes?</b><br>
+
+            Cadastre-se como profissional e receba pedidos na sua região.
+          </p>
+          <a href="#" class="button-orange">Saiba mais</a>
+        </div>
+        
+        <!-- Linha divisória -->
+        <div class="linha"> 
+        </div>
+        
+        <div class="column">
+          <h3>Cliente</h3>
+          <p>
+            <b>Precisando de ajuda?</b><br>
+            Solicite seu serviço e tenha um Severino confiável à sua porta.
+          </p>
+          <a href="#" class="button-orange">Saiba mais</a>
+        </div>
+      </section>
+
+<!-- ############# Seção depoimento #################-->
+      <section class="depp" id="avaliacao">
+        <h2>O que a comunidade diz?</h2>
+        <div class= cardss>
+          <!-- Cards 1 -->
+         <div class="cardd">
+            <div class="clientee">
+              <img class="sombra" src="./src/assets/images/img-max-dep.svg" alt="Max">
+              <div class="nomee">
+                <h3>Max</h3>
+                <div class="starss">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/meia-estrela.svg" alt="meia estrela">
+                </div>
+              </div>
+            </div>
+            <p>Chamei um eletricista e em 30 minutos ele estava aqui.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="cardd">
+            <div class="clientee">
+              <img class="sombra" src="./src/assets/images/img-amanda-dep.svg" alt="Amanda">
+              <div class="nomee">
+                <h3>Amanda</h3>
+                <div class="starss">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/meia-estrela.svg" alt="meia estrela">
+                </div>
+              </div>
+            </div>
+            <p>Fui muito bem atendida e o serviço foi impecável.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="cardd">
+            <div class="clientee">
+              <img class="sombra" src="./src/assets/images/img-likaro-dep.svg" alt="Likaro">
+              <div class="nomee">
+                <h3>Likaro</h3>
+                <div class="starss">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/estrela.svg" alt="estrela">
+                  <img src="./src/assets/images/meia-estrela.svg" alt="meia estrela">
+                </div>
+              </div>
+            </div>
+            <p>Já usei para vários serviços, sempre rápidos!</p>
+          </div>
+      </section>
+
+<!-- ############## Seção App ######################### -->
+      <section class="appp">
+        <h2>Baixe o nosso aplicativo e tenha um Severino na palma da mão</h2>
+        <div class="app-celular">
+          <img class="celular" src="./src/assets/images/imagem-celular.svg" alt="smartfone">
+          <div class="botao-baixe">
+            <button>Baixe agora!</button>
+            <div>
+              <img class="img-play" src="./src/assets/images/imagem-google-play.svg" alt="playstore">
+              <img class="img-apple" src="./src/assets/images/imagem-app-store.svg" alt="appstore">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+ 
+<!-- ############ Footer ############### -->
+<footer>
+        <div class="footer-container">
+          <div class="footer-logo-socials">
+            <div class="footer-logo">
+              <img src="./src/assets/images/logotipo-severinos.png" alt="Logotipo severinos">
+              <p>A Severinos conecta você aos melhores profissionais da sua região para serviços domésticos e comerciais com segurança e qualidade.</p>
+              
+            </div>
+            <div class="footer-socials">
+              <a href="">
+                <img class="image-face" src="./src/assets/images/logo-face.svg" alt="Logo do Facebook">
+              </a>
+
+              <a href="">
+                <img class="image-insta" src="./src/assets/images/logo-insta.svg" alt="Logo do Instagram">
+              </a>
+
+              <a class="image-linkedin" href="">
+                <img src="./src/assets/images/logo-linkedin.svg" alt="Logo do Linkedin">
+              </a>
+            </div>
+          </div>  
+          
+            <div class="footer-links">
+                <h3>Links úteis:</h3>
+                <a href="#">Inicio</a>
+                <a href="#servico">Serviços</a>
+                <a href="#">Contato</a>
+                <a href="#">Politica de privacidade</a>
+            </div>
+
+            <div class="footer-subscribe">
+              <h3>Receba novidades e promoções:</h3>
+              
+              <div class="footer-pesq">
+                <input type="email" placeholder="Campo de email">
+                <button>INSCREVER</button>
+              </div>
+              <h5>Logo © 2025 Severinos. Todos os direitos reservados.</h5>
+            </div>
+          </div>
+      </footer>
+
+      <script>
+        function openPopup(id) {
+          document.getElementById(id).style.display = 'flex';
+        }
+      
+        function closePopup(id) {
+          document.getElementById(id).style.display = 'none';
+        }
+      
+        function closePopupOnOutside(event, id) {
+          const popup = document.getElementById(id);
+          if (event.target === popup) {
+            popup.style.display = 'none';
+          }
+        }
+      </script>
+
+</html>

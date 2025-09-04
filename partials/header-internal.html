@@ -1,0 +1,72 @@
+ <!-- ###################### Header ######################### -->
+<style>
+  header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 87px;
+  padding-left: 36px;
+  padding-right: 33px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+header img {
+  width: 175.27px;
+  height: 65.82px;
+}
+
+nav {
+  width: 485px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-buttons a {
+  font-size: 24.49px;
+  color: black;
+  transition: transform 0.2s;
+  
+}
+.nav-buttons a:hover
+{
+  color: #f1761f;
+  transform: scale(1.1);
+}
+.botoes-login {
+  display: flex;
+  gap: 8px;
+}
+.botao-login {
+  padding: 8px 27px;
+  border: 2px solid #f1761f;
+  background-color: transparent;
+  color: #f1761f;
+  border-radius: 11.48px;
+  font-size: 21.5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 150px;
+  height: 45px;
+
+}
+.botao-login:hover {
+  background-color: #f1761f;
+  color: white;
+}
+</style>
+
+ <header class="site-header">
+
+        <img src="/src/assets/images/logotipo-severinos.png" alt="Logotipo Dr. Reforma Confiança e qualidade em cada serviço">
+        <nav class="nav-buttons">
+          <a href="#">Inicio</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#blog">Blog</a>
+          <a href="#avaliacao">Avaliações</a>
+        </nav>
+        <div class="botoes-login">
+          <button class="botao-login" onclick="openPopup('loginPopup')">Entrar</button>
+          <button class="botao-login" onclick="openPopup('registerPopup')">Cadastrar</button>
+        </div>
+      
+    </header>

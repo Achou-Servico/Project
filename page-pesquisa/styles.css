@@ -1,58 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho do elemento */
     text-decoration: none;
     font-family: "Sansation", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Estilo geral do corpo da página */
+body {
+  line-height: 1.5; /* Espaçamento entre linhas */
+  color: #333; /* Cor do texto */
+  background: #fff; /* Fundo branco */
+  padding: 20px; /* Espaçamento interno nas bordas */
 }
 
-/* ############## Seção Caixa de Pesquisa #############*/
+/* Cabeçalho */
+.header {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
+}
 
-.pesquisa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 304px;
+/* Formulário de busca */
+.search-form {
+  display: flex; /* Coloca os itens (input + botão) lado a lado */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 15px; /* Espaço acima */
 }
-.pesquisa h1 {
-  font-size: 48px;
-  color: black;
-  margin-bottom: 29px;
-  font-weight: 500;
+
+.search-form input {
+  width: 400px; /* Largura do campo de busca */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 6px 0 0 6px; /* Cantos arredondados na esquerda */
+  outline: none; /* Remove o contorno azul ao clicar */
 }
-.caixa-pesquisa {
+
+.search-form button {
+  padding: 10px 15px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda igual ao input */
+  border-left: none; /* Remove borda da esquerda para unir com input */
+  background: #fff; /* Fundo branco */
+  border-radius: 0 6px 6px 0; /* Cantos arredondados na direita */
+  cursor: pointer; /* Mostra mãozinha ao passar o mouse */
+}
+
+/* Layout principal (sidebar + cards) */
+.container {
+  display: flex; /* Coloca sidebar e serviços lado a lado */
+  gap: 30px; /* Espaço entre eles */
+}
+
+/* Sidebar (categorias) */
+.sidebar {
+  width: 200px; /* Largura fixa */
+}
+
+.category-list {
+  list-style: none; /* Remove bolinhas da lista */
+  margin-top: 10px;
+}
+
+.category-list li {
+  display: flex; /* Texto e número lado a lado */
+  justify-content: space-between; /* Um vai para esquerda, outro para direita */
+  padding: 8px;
+  border: 1px solid #eee; /* Borda leve */
+  border-radius: 6px; /* Cantos arredondados */
+  margin-bottom: 8px; /* Espaço entre itens */
+}
+
+.category-list .count {
+  background: #f4f4f4; /* Fundo cinza claro para o número */
+  padding: 2px 6px; /* Espaçamento interno */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Grid de serviços (cards) */
+.services {
+  flex: 1; /* Ocupa todo espaço restante */
+  display: grid; /* Exibe em forma de grade */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsivo: mínimo 280px, máximo ocupa espaço */
+  gap: 20px; /* Espaço entre os cards */
+}
+
+/* Card individual */
+.card {
+  border: 1px solid #eee; /* Borda leve */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 15px; /* Espaço interno */
+  background: #fff; /* Fundo branco */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra leve */
+}
+
+/* Cabeçalho do card (foto + info) */
+.card-header {
   display: flex;
-  align-items: center;
-  border: 2px solid #000000;
-  border-radius: 7px;
-  padding: 5px;
-  background-color: #fff;
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaço entre foto e texto */
+}
+
+/* Avatar (círculo cinza para a foto) */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #ddd; /* Cinza claro */
+  border-radius: 50%; /* Deixa redondo */
+}
+
+/* Imagem de serviço */
+.image-placeholder {
   width: 100%;
-  max-width: 1150px;
-  
+  height: 150px;
+  background: #eaeaea; /* Cinza claro */
+  border-radius: 8px; /* Cantos arredondados */
+  margin: 10px 0; /* Espaço acima e abaixo */
 }
-.caixa-pesquisa input {
-  flex: 1;
-  padding: 5px 5px 5px 25px;
-  border: none;
-  outline: none;
-  font-size: 24px;  
+
+/* Avaliação */
+.rating {
+  font-size: 14px;
+  margin: 5px 0;
 }
-.caixa-pesquisa button {
-  background: none;
-  border: none;
-  padding: 1px;
+
+/* Texto de descrição */
+.description {
+  font-size: 14px;
+  color: #555; /* Cinza mais escuro */
+  margin-bottom: 10px;
+}
+
+/* Botões do card */
+.actions {
+  display: flex;
+  gap: 10px; /* Espaço entre botões */
+}
+
+/* Botão com borda */
+.btn-outline {
+  flex: 1; /* Ambos os botões ocupam o mesmo espaço */
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: transparent; /* Fundo transparente */
   cursor: pointer;
 }
-.caixa-pesquisa button img {
-  width: 55px;
-  height: 55px;
-  transition: transform 0.2s;
+
+/* Botão escuro */
+.btn-dark {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #333; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  cursor: pointer;
 }

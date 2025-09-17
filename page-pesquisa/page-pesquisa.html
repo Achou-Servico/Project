@@ -11,40 +11,138 @@
      <div data-include="/partials/header-internal.html"></div>
 
      <!-- ############# Caixa de Pesquisa ###########33 -->
-    <section>
-     <div class="pesquisa">
-        <h1>Olá, qual serviço voce está procurando?</h1>
-        <div class="caixa-pesquisa">
-            <input type="text" placeholder="Qual serviço está precisando hoje?">
-            <button>
-                <img src="../src/assets/images/lupa-pesquisa.png" alt="Lupa">
-            </button>
-        </div>
-    </div>
-    </section>  
+    <header class="header">
+    <h1>Olá, qual serviço você está procurando?</h1>
+    <form class="search-form">
+      <input type="text" placeholder="Qual serviço está precisando hoje?">
+      <button type="submit">🔍</button>
+    </form>
+  </header> 
     
-    <!-- ################# Resultado de pesquisa ########### -->
-    <section>
-        <div>
-            <div class="categorias">
-                <h1>categorias</h1>
-            </div>
-            <div class="box">
-                <div>
-                    <img src="" alt="foto do prestador">
-                    <div>
-                        <h1>Name</h1>
-                        <img src="" alt="imagem do serviço">
-                        <div>
-                            <p>Mecanico</p>
-                            <p>Marceneiro</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+      <main class="container">
+
+    <!-- Barra lateral com categorias -->
+    <aside class="sidebar">
+      <h2>Categorias</h2>
+      <ul class="category-list">
+        <li><span>Marceneiro</span> <span class="count">21</span></li>
+        <li><span>Pintor</span> <span class="count">32</span></li>
+        <li><span>Pedreiro</span> <span class="count">13</span></li>
+        <li><span>Encanador</span> <span class="count">14</span></li>
+      </ul>
+    </aside>
+
+    <!-- Listagem de prestadores -->
+    <section class="services">
+      <!-- Card de prestador -->
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
         </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+
+      <!-- Copiar e colar este bloco para mais cards -->
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
+        </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
+        </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
+        </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
+        </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div class="avatar"></div>
+          <div class="info">
+            <h3>Name</h3>
+            <p>Mecânico | Marceneiro</p>
+          </div>
+        </div>
+        <div class="image-placeholder"></div>
+        <div class="rating">⭐⭐⭐⭐⭐ <span>56</span></div>
+        <p class="description">Please add your content here. Keep it short and simple. And smile :)</p>
+        <div class="actions">
+          <button class="btn-outline">Perfil</button>
+          <button class="btn-dark">Mensagem</button>
+        </div>
+      </article>
+      
     </section>
+  </main>
+
+</body>
+</html>
 
      <!-- Marcador: aqui o JS vai colocar o footer -->
       <div data-include="/partials/footer-internal.html"></div>

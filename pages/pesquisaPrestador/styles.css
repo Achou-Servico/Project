@@ -10,6 +10,8 @@
 
 /* Estilo geral do corpo da página */
 body {
+  display: flex;
+  flex-direction: column;
   line-height: 1.5; /* Espaçamento entre linhas */
   color: #333; /* Cor do texto */
   background: #fff; /* Fundo branco */
@@ -72,8 +74,6 @@ body {
   display: flex; /* Coloca sidebar e serviços lado a lado */
   gap: 30px; /* Espaço entre eles */
   margin-bottom: 46px;
-  max-width: 1551px;
-  
 }
 
 /* Sidebar (categorias) */

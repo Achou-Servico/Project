@@ -1,8 +1,143 @@
-.titulo {
-    background-color: aqua;
-    width: 1500px;
-    height: 1500px;
-    border: 2px;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* Reset básico */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos padrão */
+    box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho */
+    font-family: "Sansation", sans-serif;
+  }
+  
+ 
+  /* ================== PERFIL ================== */
+  .perfil {
+    display: flex; /* Layout em linha */
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Espaço entre avatar e texto */
+    padding: 50px; /* Espaçamento interno */
+    border: solid 1px rgb(229, 255, 0);
+  }
+
+  .foto-nome {
+    border: solid 1px rgb(38, 0, 255);
+  }
+  
+  .avatar {
+    width: 290px; /* Largura do avatar */
+    height: 290px; /* Altura do avatar */
+    background: #ddd; /* Cor de fundo cinza */
+    border-radius: 50%; /* Formato circular */
+    }
+  
+  .perfil-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 577px;
+    height: 370px;
+    font-size: 24px;
+    
+  }
+  
+  .foto-nome h2 {
+    font-size: 48px; /* Tamanho do nome */
+    margin-top: 28.95px;
+    margin-bottom: 5.5px; /* Espaço inferior */
+    border: solid 1px red;
+  }
+  
+  .profissoes {
+    color: #555; /* Cor cinza */
+    margin-bottom: 10px; /* Espaço inferior */
+    font-size: 28px;
+  }
+  
+  .rating {
+    display: flex; /* Estrelas e número em linha */
+    align-items: center; /* Alinhados verticalmente */
+    gap: 37.5px; /* Espaço entre estrelas e número */
+    margin-bottom: 15px; /* Espaço inferior */
+  }
+  
+  .descricao {
+    margin-bottom: 20px; /* Espaço inferior */
+    line-height: 1.5; /* Altura da linha para legibilidade */
+  }
+  
+  .btn-dark {
+    background: #f1761f; /* Fundo laranja */
+    color: #fff; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 25px; /* Espaçamento interno */
+    border-radius: 23px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de clique */
+    width: 228px;
+  }
+  
+  .btn-dark:hover {
+    background: #d65f15; /* Tom mais escuro no hover */
+  }
+  
+  /* ================== CARDS ================== */
+  .servicos-relacionados {
+    display: grid; /* Layout em grid */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espaço entre cards */
+    padding: 40px; /* Espaçamento interno */
+  }
+  
+  .card {
+    background: #f9f9f9; /* Fundo cinza claro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 12px; /* Cantos arredondados */
+    position: relative; /* Necessário para posicionar a label */
+    text-align: center; /* Centraliza conteúdo */
+  }
+  
+  .label {
+    position: absolute; /* Posição fixa no card */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    background: #333; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-size: 12px; /* Texto pequeno */
+    padding: 3px 8px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+  }
+  
+  .img-placeholder {
+    width: 100%; /* Ocupa toda a largura */
+    height: 120px; /* Altura fixa */
+    background: #ddd; /* Fundo cinza */
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaço inferior */
+  }
+  
+  /* ================== REVIEWS ================== */
+  .reviews {
+    padding: 40px; /* Espaçamento interno */
+    background: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza texto */
+  }
+  
+  .reviews h2 {
+    font-size: 28px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço inferior */
+  }
+  
+  .reviews-grid {
+    display: flex; /* Reviews lado a lado */
+    gap: 20px; /* Espaço entre cards */
+    justify-content: center; /* Centraliza na tela */
+  }
+  
+  .review-card {
+    background: #222; /* Fundo cinza escuro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 12px; /* Cantos arredondados */
+    width: 250px; /* Largura fixa */
+  }
+  

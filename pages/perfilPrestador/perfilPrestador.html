@@ -1,14 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define a linguagem da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Prestador</title>
-    <link rel="stylesheet" href="./perfilPrestador.css">
+  <meta charset="UTF-8"> <!-- Define o padrão de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta para ser responsivo em dispositivos móveis -->
+  <title>Perfil do Prestador</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="./perfilPrestador.css"> <!-- Importa o CSS externo -->
 </head>
-<body>
-    
-    <h1 class="titulo">Perfil Prestador</h1>
-    
-</body>
-</html>
+<body> <!-- Corpo da página -->
+
+  <!-- Seção do Perfil -->
+  <section class="perfil"> <!-- Container do perfil do prestador -->
+    <div class="foto-nome">
+    <div class="avatar"></div> <!-- Avatar (círculo cinza como placeholder) -->
+    <h2>Name</h2> <!-- Nome do prestador -->
+    <p class="profissoes">Mecânico | Marceneiro</p> <!-- Profissões -->
+    <div class="rating"> <!-- Avaliação -->
+      <span class="stars">⭐⭐⭐⭐⭐</span> <!-- Estrelas -->
+      <span class="count">56</span> <!-- Número de avaliações -->
+    </div>
+    </div>
+    <div class="perfil-info"> <!-- Informações do prestador -->
+      <p class="descricao"> <!-- Descrição do prestador -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui neque, vulputate eu bibendum aliquet, fermentum a turpis. Etiam malesuada urna non nunc iaculis, eget pellentesque augue ornare. Suspendisse volutpat sollicitudin erat. Integer sit amet aliquet lacus. Ut nulla urna, condimentum sed aliquet quis, ullamcorper in leo.
+      </p>
+      <button class="btn-dark">Mensagem</button> <!-- Botão de enviar mensagem -->
+    </div>
+  </section>
+
+  <!-- Serviços Relacionados -->
+  <section class="servicos-relacionados"> <!-- Container dos cards de serviços -->
+    <article class="card"> <!-- Card individual -->
+      <div class="label">Label</div> <!-- Etiqueta no canto do card -->
+      <div class="img-placeholder"></div> <!-- Área cinza como imagem -->
+      <h3>Headline</h3> <!-- Título do card -->
+      <p>Please add your content here. Keep it short and simple. And smile :)</p> <!-- Texto do card -->
+    </article>
+    <!-- Repete mais 3 cards -->
+    <article class="card">
+      <div class="label">Label</div>
+      <div class="img-placeholder"></div>
+      <h3>Headline</h3>
+      <p>Please add your content here. Keep it short and simple. And smile :)</p>
+    </article>
+    <article class="card">
+      <div class="label">Label</div>
+      <div class="img-placeholder"></div>
+      <h3>Headline</h3>
+      <p>Please add your content here. Keep it short and simple. And smile :)</p>
+    </article>
+    <article class="card">
+      <div class="label">Label</div>
+      <div class="img-placeholder"></div>
+      <h3>Headline</h3>
+      <p>Please add your content here. Keep it short and simple. And smile :)</p>
+    </article>
+  </section>
+
+
+</body> <!-- Fim do corpo -->
+</html> <!-- Fim do documento -->

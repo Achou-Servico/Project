@@ -16,40 +16,64 @@ body {
   padding: 20px; /* Espaçamento interno nas bordas */
 }
 
-/* Cabeçalho */
-.header {
-  text-align: center; /* Centraliza o texto */
-  margin-bottom: 30px; /* Espaço abaixo do cabeçalho */
-}
-
 /* Formulário de busca */
-.search-form {
-  display: flex; /* Coloca os itens (input + botão) lado a lado */
-  justify-content: center; /* Centraliza horizontalmente */
-  margin-top: 15px; /* Espaço acima */
+.pesquisa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centraliza na horizontal */
+  justify-content: center; /* centraliza na vertical (se houver altura definida) */
+  height: 300px;           /* altura da seção inteira da tela */
+  padding: 0px 110px;
+  text-align: center;      /* centraliza texto dentro dos elementos */
+  gap: 20px;
+  margin: 44px 0px;
+  
 }
-
-.search-form input {
-  width: 400px; /* Largura do campo de busca */
-  padding: 10px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda cinza */
-  border-radius: 6px 0 0 6px; /* Cantos arredondados na esquerda */
-  outline: none; /* Remove o contorno azul ao clicar */
+.pesquisa h1 {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 29px;
+  margin-top: 75px;
+  max-width: 990px;
 }
-
-.search-form button {
-  padding: 10px 15px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Borda igual ao input */
-  border-left: none; /* Remove borda da esquerda para unir com input */
-  background: #fff; /* Fundo branco */
-  border-radius: 0 6px 6px 0; /* Cantos arredondados na direita */
-  cursor: pointer; /* Mostra mãozinha ao passar o mouse */
+.caixa-pesquisa {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1150px;
+  margin-bottom: 75px;
+  
+}
+.caixa-pesquisa input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 24px;  
+}
+.caixa-pesquisa button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.caixa-pesquisa button img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s;
 }
 
 /* Layout principal (sidebar + cards) */
 .container {
   display: flex; /* Coloca sidebar e serviços lado a lado */
   gap: 30px; /* Espaço entre eles */
+  margin-bottom: 46px;
+  max-width: 1551px;
+  
 }
 
 /* Sidebar (categorias) */
@@ -83,6 +107,7 @@ body {
   display: grid; /* Exibe em forma de grade */
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsivo: mínimo 280px, máximo ocupa espaço */
   gap: 20px; /* Espaço entre os cards */
+  
 }
 
 /* Card individual */

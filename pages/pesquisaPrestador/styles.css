@@ -7,22 +7,20 @@
     text-decoration: none;
     font-family: "Sansation", sans-serif;
 }
-
-/* Estilo geral do corpo da página */
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.5; /* Espaçamento entre linhas */
   color: #333; /* Cor do texto */
   background: #fff; /* Fundo branco */
-  padding: 20px; /* Espaçamento interno nas bordas */
 }
+/* Estilo geral do corpo da página */
+
 
 /* Formulário de busca */
 .pesquisa {
   display: flex;
   flex-direction: column;
-  align-items: center;     /* centraliza na horizontal */
   justify-content: center; /* centraliza na vertical (se houver altura definida) */
   height: 300px;           /* altura da seção inteira da tela */
   padding: 0px 110px;
@@ -72,9 +70,20 @@ body {
 /* Layout principal (sidebar + cards) */
 .container {
   display: flex; /* Coloca sidebar e serviços lado a lado */
+  justify-content: center;
   gap: 30px; /* Espaço entre eles */
   margin-bottom: 46px;
+  width: 100%;
+  max-width: 1380px;
+ 
 }
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
 
 /* Sidebar (categorias) */
 .sidebar {
